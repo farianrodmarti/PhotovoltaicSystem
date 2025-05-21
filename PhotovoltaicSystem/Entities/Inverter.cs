@@ -12,6 +12,7 @@ namespace PhotovoltaicSystem.Domain.Entities
         public string Model { get; init; }
         public string SerialNumber { get; init; }
         public double MaximumPower { get; init; }
+        public Guid PhtovoltaicSystemId { get; init; }
 
         public Inverter(string model, string serialNumber, double maximumPower) : base(new Guid())
         {

@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36109.1 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotovoltaicSystem.Domain", "PhotovoltaicSystem\PhotovoltaicSystem.Domain.csproj", "{39356DFB-F7EC-4BDC-82DE-9E3CC1507F96}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotovoltaicSystem.Contracts", "PhotovoltaicSystem.Contracts\PhotovoltaicSystem.Contracts.csproj", "{412BA5D1-BCBC-4DD9-A61A-863E625C6609}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{39356DFB-F7EC-4BDC-82DE-9E3CC1507F96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39356DFB-F7EC-4BDC-82DE-9E3CC1507F96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39356DFB-F7EC-4BDC-82DE-9E3CC1507F96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{412BA5D1-BCBC-4DD9-A61A-863E625C6609}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{412BA5D1-BCBC-4DD9-A61A-863E625C6609}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{412BA5D1-BCBC-4DD9-A61A-863E625C6609}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{412BA5D1-BCBC-4DD9-A61A-863E625C6609}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

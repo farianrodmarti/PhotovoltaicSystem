@@ -13,6 +13,7 @@ namespace PhotovoltaicSystem.Domain.Entities
         public string SerialNumber { get; init; }
         public string Model { get; init; }
         public Capacity Capacity { get; init; }
+        public Guid PhtovoltaicSystemId { get; init; }
 
         protected SolarPanel() { }
 

@@ -8,7 +8,7 @@ namespace PhotovoltaicSystem.Domain.Entities.Abstract
         #region Properties
         public int HouseNumber { get; init; }
         public Address Address { get; init; }
-        public PhotovoltaicSystem PhotovoltaicSystem { get; init; }
+        public PhotovoltaicSystemInstall PhotovoltaicSystem { get; init; }
         #endregion
 
         protected Housing() { }

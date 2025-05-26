@@ -42,6 +42,6 @@ namespace PhotovoltaicSystem.Contracts.Reposotories
         /// </summary>
         /// <param name="photovoltaicSystem"></param>
         /// <returns></returns>
-        Task DeleteAsyn(PhotovoltaicSystemInstall photovoltaicSystem);
+        void DeleteAsync(PhotovoltaicSystemInstall photovoltaicSystem);
     }
 }

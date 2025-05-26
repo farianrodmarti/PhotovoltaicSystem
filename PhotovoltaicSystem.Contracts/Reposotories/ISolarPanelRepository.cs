@@ -1,4 +1,5 @@
 ﻿using PhotovoltaicSystem.Domain.Entities;
+using PhotovoltaicSystem.Domain.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +22,7 @@ namespace PhotovoltaicSystem.Contracts.Reposotories
         /// </summary>
         /// <param name="serialNumber"></param>
         /// <returns></returns>
-        Task<SolarPanel> GetBySerialNumber(string serialNumber);
+        Task<SolarPanel?> GetBySerialNumber(string serialNumber);
 
         /// <summary>
         /// Obtiene una lista de sistemas fotovoltaicos con un mismo modelo
@@ -35,7 +36,7 @@ namespace PhotovoltaicSystem.Contracts.Reposotories
         /// </summary>
         /// <param name="capacity"></param>
         /// <returns></returns>
-        Task<List<SolarPanel>> GetByCapacity(string capacity);
+        Task<List<SolarPanel>> GetByCapacity(Capacity capacity);
 
         /// <summary>
         /// Actualiza un sistema fotovoltaico
@@ -49,7 +50,7 @@ namespace PhotovoltaicSystem.Contracts.Reposotories
         /// </summary>
         /// <param name="serialNumber"></param>
         /// <returns></returns>
-        Task DeleteAsync(string serialNumber);
+        void DeleteAsync(string serialNumber);
 
     }
 }

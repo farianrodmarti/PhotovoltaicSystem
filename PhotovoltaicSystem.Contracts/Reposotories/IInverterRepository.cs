@@ -35,20 +35,20 @@ namespace PhotovoltaicSystem.Contracts.Reposotories
         /// </summary>
         /// <param name="model"></param>
         /// <returns></returns>
-        Task<List<Inverter>> GetByModel(string model);
+        Task<List<Inverter?>> GetByModel(string model);
 
         /// <summary>
         /// Obtiene una lista de inversores por su potencia maxima
         /// </summary>
         /// <param name="maximumPower"></param>
         /// <returns></returns>
-        Task<List<Inverter>> GetByMaximumPower(string maximumPower);
+        Task<List<Inverter?>> GetByMaximumPower(double maximumPower);
 
         /// <summary>
         /// Elimina un inversor por su numero de serie
         /// </summary>
         /// <param name="serialNumber"></param>
         /// <returns></returns>
-        Task DeleteAsync(string serialNumber);
+        void DeleteAsync(string serialNumber);
     }
 }

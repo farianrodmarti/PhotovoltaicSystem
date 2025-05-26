@@ -26,7 +26,7 @@ namespace PhotovoltaicSystem.Contracts.Reposotories
         /// <param name="address"></param>
         /// <param name="houseNumber"></param>
         /// <returns></returns>
-        Task<Housing> GetBySpecificAddress(Address address, int houseNumber);
+        Task<Housing?> GetBySpecificAddress(Address address, int houseNumber);
 
         /// <summary>
         /// Obtiene una lista de viviendas en una dirección
@@ -48,7 +48,7 @@ namespace PhotovoltaicSystem.Contracts.Reposotories
         /// <param name="address"></param>
         /// <param name="houseNumber"></param>
         /// <returns></returns>
-        Task DeleteAsync(Address address, int houseNumber);
+        void DeleteAsync(Address address, int houseNumber);
 
 
 

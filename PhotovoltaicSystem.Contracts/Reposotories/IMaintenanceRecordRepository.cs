@@ -21,7 +21,7 @@ namespace PhotovoltaicSystem.Contracts.Reposotories
         /// </summary>
         /// <param name="date"></param>
         /// <returns></returns>
-        Task<MaintenanceRecord> GetByDateTime(DateTime date, Guid photovoltaicSystemId);
+        Task<MaintenanceRecord?> GetByDateTime(DateTime date, Guid photovoltaicSystemId);
 
         /// <summary>
         /// Obtiene una lista de mantenimientos por un rango de fecha y el sistema fotovoltaico asociado.

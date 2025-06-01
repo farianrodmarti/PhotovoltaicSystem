@@ -12,6 +12,8 @@ namespace PhotovoltaicSystem.Domain.ValueObjects
         public string Country { get; init; }
 
         #endregion
+
+        protected Address() { }
         public Address(string street, string city, string postalCode, string country)
         {
             Street = street;

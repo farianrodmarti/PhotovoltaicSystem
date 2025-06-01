@@ -10,6 +10,9 @@ namespace PhotovoltaicSystem.Domain.Entities
 {
     public sealed class House : Housing
     {
+
+        protected House() : base() { }
+
         public House(int houseNumber, Address address) : base( houseNumber, address) 
         {
         }

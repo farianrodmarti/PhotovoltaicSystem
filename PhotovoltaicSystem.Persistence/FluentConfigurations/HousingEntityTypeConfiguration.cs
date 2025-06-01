@@ -16,10 +16,15 @@ namespace PhotovoltaicSystem.Persistence.FluentConfigurations
         {
             base.Configure(builder);
             builder.ToTable("Housing");
-            builder.OwnsOne(x => x.Address);
-            builder.OwnsOne(x => x.PhotovoltaicSystem);
+            builder.HasOne(x => x.PhotovoltaicSystem);
+            builder.OwnsOne(x => x.Address, addressBuilder =>
+            {
+                addressBuilder.Property(a => a.Street).IsRequired();
+                addressBuilder.Property(a => a.City).IsRequired();
+                addressBuilder.Property(a => a.Country).IsRequired();
+                addressBuilder.Property(a => a.PostalCode).IsRequired();
+            });
             builder.Property(x => x.HouseNumber).IsRequired();
-            builder.Property(x => x.Address).IsRequired();
         }
     }
 }

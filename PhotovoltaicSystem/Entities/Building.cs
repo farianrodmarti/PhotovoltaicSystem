@@ -12,6 +12,8 @@ namespace PhotovoltaicSystem.Domain.Entities
     {
         public int NumberOfApartment { get; init; }
 
+        protected Building() :base() { }
+
         public Building(int houseNumber, Address address, int numberOfApartment) : base (houseNumber, address)
         {
             NumberOfApartment = numberOfApartment;

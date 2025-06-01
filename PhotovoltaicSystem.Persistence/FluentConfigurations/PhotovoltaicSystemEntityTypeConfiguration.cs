@@ -17,8 +17,8 @@ namespace PhotovoltaicSystem.Persistence.FluentConfigurations
         {
             base.Configure(builder);
             builder.ToTable("PhotovoltaicSystem");
-            builder.OwnsOne(x => x.Inverter);
-            builder.OwnsMany(x => x.SolarPanels);
+            builder.HasOne(x => x.Inverter);
+            builder.HasMany(x => x.SolarPanels);
             builder.OwnsMany(x => x.Maintenances);
             builder.Property(x => x.HasBattery);
         }

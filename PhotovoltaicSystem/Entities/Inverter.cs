@@ -14,6 +14,8 @@ namespace PhotovoltaicSystem.Domain.Entities
         public double MaximumPower { get; init; }
         public Guid PhotovoltaicSystemId { get; init; }
 
+        protected Inverter() { }
+
         public Inverter(string model, string serialNumber, double maximumPower) : base(new Guid())
         {
             Model = model;

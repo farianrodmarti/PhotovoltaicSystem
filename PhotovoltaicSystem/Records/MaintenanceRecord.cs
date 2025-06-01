@@ -13,6 +13,7 @@ namespace PhotovoltaicSystem.Domain.Records
         public string Description { get; }
         public Guid PhtovoltaicSystemId { get; init; }
 
+        protected MaintenanceRecord() { }
 
         public MaintenanceRecord(DateTime dateTime, string description, Guid phtovoltaicSystemId)
         {

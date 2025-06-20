@@ -23,9 +23,10 @@ namespace PhotovoltaicSystem.Persistence.Repositories
           await _context.AddAsync(photovoltaicSystem);
         }
 
-        public void DeleteAsync(PhotovoltaicSystemInstall photovoltaicSystem)
+        public void DeleteAsync(Guid id)
         {
-            _context.PhotovoltaicSystemInstalls.Remove(photovoltaicSystem);
+            PhotovoltaicSystemInstall photovoltaicSystemInstall = _context.PhotovoltaicSystemInstalls.Where(x => x.Id == id).FirstOrDefault();
+            _context.PhotovoltaicSystemInstalls.Remove(photovoltaicSystemInstall);
         }
 
         public Task<List<PhotovoltaicSystemInstall>> GetByBattery(bool isHasBattery)

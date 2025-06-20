@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotovoltaicSystem.Contract
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotovoltaicSystem.Persistence", "PhotovoltaicSystem.Persistence\PhotovoltaicSystem.Persistence.csproj", "{7BB1514D-77EC-4690-BEE1-8515E932B65E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotovoltaicSystem.Application", "PhotovoltaicSystem.Application\PhotovoltaicSystem.Application.csproj", "{70E44428-C062-4A8D-BC07-45F0D3387990}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{7BB1514D-77EC-4690-BEE1-8515E932B65E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BB1514D-77EC-4690-BEE1-8515E932B65E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BB1514D-77EC-4690-BEE1-8515E932B65E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70E44428-C062-4A8D-BC07-45F0D3387990}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70E44428-C062-4A8D-BC07-45F0D3387990}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70E44428-C062-4A8D-BC07-45F0D3387990}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70E44428-C062-4A8D-BC07-45F0D3387990}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

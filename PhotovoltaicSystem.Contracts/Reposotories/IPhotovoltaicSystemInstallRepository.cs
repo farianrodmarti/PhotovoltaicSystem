@@ -42,6 +42,6 @@ namespace PhotovoltaicSystem.Contracts.Reposotories
         /// </summary>
         /// <param name="photovoltaicSystem"></param>
         /// <returns></returns>
-        void DeleteAsync(PhotovoltaicSystemInstall photovoltaicSystem);
+        void DeleteAsync(Guid id);
     }
 }

@@ -1,7 +1,7 @@
 ﻿using PhotovoltaicSystem.Application.Common;
 using PhotovoltaicSystem.Domain.Entities;
 
-namespace PhotovoltaicSystem.Application.Commands
+namespace PhotovoltaicSystem.Application.Commands.PhotovoltaicSystem.UpdatePhotovoltaicSystem
 {
     public sealed record UpdatePhotovoltaicSystemCommand(
           PhotovoltaicSystemInstall Photovoltaic

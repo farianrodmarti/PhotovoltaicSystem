@@ -8,5 +8,5 @@ using System.Threading.Tasks;
 
 namespace PhotovoltaicSystem.Application.Queries.PhotovoltaicSystem.GetByMaintenance
 {
-    public sealed record GetByMaintenanceQuerie(bool IsHasMaintenance) : IQuery<IEnumerable<PhotovoltaicSystemInstall>>;
+    public sealed record GetByMaintenanceQuery(bool IsHasMaintenance) : IQuery<IEnumerable<PhotovoltaicSystemInstall>>;
 }

@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PhotovoltaicSystem.Application.Commands
+namespace PhotovoltaicSystem.Application.Commands.PhotovoltaicSystem.UpdatePhotovoltaicSystem
 {
     public sealed class UpdatePhotovoltaicSystemCommandHandler : ICommandHandler<UpdatePhotovoltaicSystemCommand>
     {

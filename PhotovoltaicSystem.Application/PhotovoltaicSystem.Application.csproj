@@ -16,4 +16,9 @@
     <ProjectReference Include="..\PhotovoltaicSystem\PhotovoltaicSystem.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Commands\SolarPanelCommand\NewFolder - Copia %282%29\" />
+    <Folder Include="Commands\SolarPanelCommand\NewFolder - Copia\" />
+  </ItemGroup>
+
 </Project>

@@ -17,7 +17,7 @@ namespace PhotovoltaicSystem.Domain.Entities
 
         protected SolarPanel() { }
 
-        public SolarPanel( string serialNumber, string model, Capacity capacity ) : base(new Guid())
+        public SolarPanel( string serialNumber, string model, Capacity capacity ) : base(Guid.NewGuid())
         {
             SerialNumber = serialNumber;
             Model = model;

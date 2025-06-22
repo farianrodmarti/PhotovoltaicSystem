@@ -9,18 +9,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace PhotovoltaicSystem.Application.Queries.PhotovoltaicSystem.GetByMaintenance
 {
-    public sealed class GetByMaintenanceQuerieHandler : IQueryHandler<GetByMaintenanceQuerie>, IEnumerable<PhotovoltaicSystemInstall>
+    public sealed class GetByMaintenanceQueryHandler : IQueryHandler<GetByMaintenanceQuery, IEnumerable<PhotovoltaicSystemInstall>>
     {
         private readonly IAppRepositoryManager _repository;
-        public GetByMaintenanceQuerieHandler(IAppRepositoryManager repository)
+        public GetByMaintenanceQueryHandler(IAppRepositoryManager repository)
         {
             _repository = repository;
         }
-        public async Task<Result<IEnumerable<PhotovoltaicSystemInstall>>> Handle(GetByMaintenanceQuerie request, CancellationToken cancellationToken)
+
+        public async Task<Result<IEnumerable<PhotovoltaicSystemInstall>>> Handle(GetByMaintenanceQuery request, CancellationToken cancellationToken)
         {
-            return Task.FromResult(_repository.PhotovoltaicSystemInstall.GetByMaintenance<PhotovoltaicSystemInstall>());
+            return await _repository.PhotovoltaicSystemInstall.GetByMaintenance(true);
         }
     }
 }

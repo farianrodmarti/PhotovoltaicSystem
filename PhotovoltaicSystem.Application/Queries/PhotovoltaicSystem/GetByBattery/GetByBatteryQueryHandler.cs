@@ -5,7 +5,7 @@ using PhotovoltaicSystem.Domain.Entities;
 
 namespace PhotovoltaicSystem.Application.Queries.PhotovoltaicSystem.GetByBattery
 {
-    public sealed class GetByBatteryQuerieHandler : IQueryHandler<GetByBatteryQuerie, IEnumerable<PhotovoltaicSystemInstall>>
+    public sealed class GetByBatteryQuerieHandler : IQueryHandler<GetByBatteryQuery, IEnumerable<PhotovoltaicSystemInstall>>
     {
         private readonly IAppRepositoryManager _repository;
         public GetByBatteryQuerieHandler(IAppRepositoryManager repository)
@@ -13,7 +13,7 @@ namespace PhotovoltaicSystem.Application.Queries.PhotovoltaicSystem.GetByBattery
             _repository = repository;
         }
 
-        public async Task<Result<IEnumerable<PhotovoltaicSystemInstall>>> Handle(GetByBatteryQuerie request, CancellationToken cancellationToken)
+        public async Task<Result<IEnumerable<PhotovoltaicSystemInstall>>> Handle(GetByBatteryQuery request, CancellationToken cancellationToken)
         {
             var result = await _repository.PhotovoltaicSystemInstall.GetByBattery(request.IsHasBattery);
             return Result.Ok<IEnumerable<PhotovoltaicSystemInstall>>(result);

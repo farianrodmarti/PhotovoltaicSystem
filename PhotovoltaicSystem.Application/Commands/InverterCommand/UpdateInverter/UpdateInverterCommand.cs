@@ -6,7 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PhotovoltaicSystem.Application.Queries.PhotovoltaicSystem.GetByBattery
+namespace PhotovoltaicSystem.Application.Commands.InverterCommand.UpdateInverter
 {
-    public sealed record GetByBatteryQuery( bool IsHasBattery) : IQuery<IEnumerable<PhotovoltaicSystemInstall>>;  
+    public sealed record UpdateInverterCommand(Inverter Inverter): ICommand
+    {
+    }
 }

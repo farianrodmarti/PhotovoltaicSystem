@@ -17,8 +17,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\SolarPanelCommand\NewFolder - Copia %282%29\" />
-    <Folder Include="Commands\SolarPanelCommand\NewFolder - Copia\" />
+    <Folder Include="Commands\HousingCommand\DeleteHousing\" />
+    <Folder Include="Commands\HousingCommand\UpdateHousing\" />
+    <Folder Include="Queries\SolarPanel\NewFolder - Copia %282%29\" />
+    <Folder Include="Queries\SolarPanel\NewFolder - Copia\" />
   </ItemGroup>
 
 </Project>

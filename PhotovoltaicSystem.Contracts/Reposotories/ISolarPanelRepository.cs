@@ -51,6 +51,6 @@ namespace PhotovoltaicSystem.Contracts.Reposotories
         /// <param name="serialNumber"></param>
         /// <returns></returns>
         void DeleteAsync(string serialNumber);
-
+     
     }
 }

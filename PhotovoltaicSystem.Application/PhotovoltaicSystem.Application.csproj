@@ -7,6 +7,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Commands\HousingCommand\DeleteHousing\**" />
+    <Compile Remove="Commands\HousingCommand\UpdateHousing\**" />
+    <Compile Remove="Queries\SolarPanel\NewFolder - Copia %282%29\**" />
+    <Compile Remove="Queries\SolarPanel\NewFolder - Copia\**" />
+    <EmbeddedResource Remove="Commands\HousingCommand\DeleteHousing\**" />
+    <EmbeddedResource Remove="Commands\HousingCommand\UpdateHousing\**" />
+    <EmbeddedResource Remove="Queries\SolarPanel\NewFolder - Copia %282%29\**" />
+    <EmbeddedResource Remove="Queries\SolarPanel\NewFolder - Copia\**" />
+    <None Remove="Commands\HousingCommand\DeleteHousing\**" />
+    <None Remove="Commands\HousingCommand\UpdateHousing\**" />
+    <None Remove="Queries\SolarPanel\NewFolder - Copia %282%29\**" />
+    <None Remove="Queries\SolarPanel\NewFolder - Copia\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="FluentResults" Version="3.16.0" />
     <PackageReference Include="MediatR" Version="12.5.0" />
   </ItemGroup>
@@ -14,13 +29,6 @@
   <ItemGroup>
     <ProjectReference Include="..\PhotovoltaicSystem.Contracts\PhotovoltaicSystem.Contracts.csproj" />
     <ProjectReference Include="..\PhotovoltaicSystem\PhotovoltaicSystem.Domain.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Commands\HousingCommand\DeleteHousing\" />
-    <Folder Include="Commands\HousingCommand\UpdateHousing\" />
-    <Folder Include="Queries\SolarPanel\NewFolder - Copia %282%29\" />
-    <Folder Include="Queries\SolarPanel\NewFolder - Copia\" />
   </ItemGroup>
 
 </Project>

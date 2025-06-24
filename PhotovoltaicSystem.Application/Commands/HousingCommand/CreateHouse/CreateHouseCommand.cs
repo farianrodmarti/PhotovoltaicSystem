@@ -6,12 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
-namespace PhotovoltaicSystem.Application.Commands.HousingCommand.CreateHousing
+namespace PhotovoltaicSystem.Application.Commands.HousingCommand.CreateHouse
 {
-    public sealed record CreateHousingCommand(
+    public sealed record CreateHouseCommand(
         int HouseNumber,
-        Address Address): ICommand
+        Address Address) : ICommand
     {
     }
 }
